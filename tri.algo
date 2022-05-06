@@ -1,0 +1,15 @@
+ALGORITHM algorithm_tri-insertion
+VAR
+    var i,j,key:INTEGER
+    tab1:ARRAY_OF INTEGER[5]
+BEGIN
+    FOR i FROM 1 TO tab1.length-1 STEP 1  DO
+        key : = tab1[i]
+        j = i-1
+        WHILE (tab1[j] > key && j >=0) DO
+            tab1[j+1]=tab[j]
+            j--
+        END_WHILE
+        tab1[j+1]=key
+    END_FOR
+END 
